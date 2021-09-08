@@ -1,6 +1,4 @@
-<Layout>
- <MdsvexDocument />
-<Layout>
+<slot/>
 
 <style>
     h1 {

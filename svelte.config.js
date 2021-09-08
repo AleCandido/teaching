@@ -14,7 +14,10 @@ const config = {
 	preprocess: [
 		mdsvex({
 			extensions: ['.md', '.svx'],
-			layout: { project: './src/lib/layouts/project.svelte', _: './src/lib/layouts/default.svelte' }
+			layout: { 
+				project: './src/lib/layouts/project.svelte',
+				_: './src/lib/layouts/article.svelte'
+			}
 		}),
 		preprocess({
 			sourceMap: !production,
@@ -28,7 +31,11 @@ const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			paths: {
+				base: '/teaching',
+			},
+		}),
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	}
