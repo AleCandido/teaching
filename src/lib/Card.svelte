@@ -8,7 +8,7 @@
 </script>
 
 <article on:click={navigate} class="w-96 m-5 h-40 flex border border-gray-500 rounded-lg overflow-hidden bg-white">
-    <img src="/static/books-small.jpg" alt="" class="flex-grow-0 h-full w-2/5">
+    <img src="/books-small.jpg" alt="" class="flex-grow-0 h-full w-2/5">
     <div class="w-7/12 pt-2 mr-3 ml-3">
         <h4 class="mb-2 capitalize font-bold underline">
             {details.title}

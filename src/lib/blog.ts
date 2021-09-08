@@ -2,6 +2,7 @@ import fs from 'fs';
 import yaml from 'js-yaml';
 
 export const BLOG_PATH = 'src/routes/courses';
+export const METADATA_PATH = 'src/lib/courses';
 
 export function getProjectData({ year, project }) {
 	const articles = [];

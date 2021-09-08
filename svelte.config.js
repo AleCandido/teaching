@@ -21,6 +21,7 @@ const config = {
 		}),
 		preprocess({
 			sourceMap: !production,
+			exclude: [".yaml"],
 
 			postcss: {
 				plugins: [tailwindcss, autoprefixer]
