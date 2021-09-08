@@ -1,0 +1,20 @@
+@import '@fontsource/alice';
+@import '@fontsource/sacramento';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+* {
+	font-family: 'Alice', sans-serif;
+}
+
+body {
+	background-color: #fafafa;
+}
+
+h1 {
+	font-family: 'Sacramento';
+}
+
+
