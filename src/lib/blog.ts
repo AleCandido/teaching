@@ -27,7 +27,7 @@ export async function getDirectories(location) {
 	let years = {};
 
 	for (const dir of directories) {
-		const dirLoc = `${location}/${dir}`;
+		const dirLoc = `${METADATA_PATH}/${dir}`;
 
 		const subdirectories = fs
 			.readdirSync(dirLoc)

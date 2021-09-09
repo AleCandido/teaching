@@ -1,27 +1,24 @@
 /** @type {import('@sveltejs/kit').Config} */
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
+
 import { mdsvex } from 'mdsvex';
+import mdsvexConfig from "./mdsvex.config.js";
 
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 
 const production = !process.env.ROLLUP_WATCH;
 
+console.log(mdsvexConfig)
+
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: [
-		mdsvex({
-			extensions: ['.md', '.svx'],
-			layout: { 
-				project: './src/lib/layouts/project.svelte',
-				_: './src/lib/layouts/article.svelte'
-			}
-		}),
+		mdsvex(mdsvexConfig),
 		preprocess({
 			sourceMap: !production,
-			exclude: [".yaml"],
 
 			postcss: {
 				plugins: [tailwindcss, autoprefixer]
