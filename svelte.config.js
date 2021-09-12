@@ -10,8 +10,6 @@ import autoprefixer from 'autoprefixer';
 
 const production = !process.env.ROLLUP_WATCH;
 
-console.log(mdsvexConfig)
-
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors

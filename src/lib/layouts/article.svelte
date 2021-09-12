@@ -30,14 +30,21 @@
 
     main :global(p) {
         font-size: 13pt;
-        margin: 1em 0 0 0;
+        margin: 0.6em 0 0.6em 0;
     }
 
     main :global(h2) {
         font-size: 18pt;
         font-weight: bold;
         text-transform: uppercase;
-        margin: 1em 0 0.5em 0.3em;
+        margin: 1.2em 0 0.7em 0.3em;
+    }
+
+    main :global(h3) {
+        font-size: 14pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 1em 0 0 0.1em;
     }
 
     main :global(a) {
@@ -49,6 +56,12 @@
 
     main :global(ol) {
         list-style-type: decimal;
-        list-style-position: inside;
+        /* list-style-position: inside; */
+        margin: 0.5em 0 0.5em 2em;
+    }
+
+    main :global(ul) {
+        list-style-type: disc;
+        margin: 0.5em 0 0.5em 2em;
     }
 </style>
