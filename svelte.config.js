@@ -29,6 +29,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
+			assets: "https://www.annibale.dev/teaching",
 			base: '/teaching'
 		},
 		// hydrate the <div id="svelte"> element in src/app.html
