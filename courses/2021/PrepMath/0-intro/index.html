@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Teaching - Introduzione &amp; Materiale</title><link rel="icon" type="image/png" href="https://annibale.dev/favicon.png" data-svelte="svelte-7c5khk"><meta property="og:image" content="https://annibale.dev/favicon.png" data-svelte="svelte-7c5khk"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" integrity="sha384-zTROYFVGOfTw7JV7KUu8udsvW2fx4lWOsCEDqhBreBwlHI4ioVRtmIvEThzJHGET" crossorigin="anonymous" data-svelte="svelte-7c5khk"><script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous" data-svelte="svelte-7c5khk"></script>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-3d665f3b.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-7d460438.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-742b7059.js">
+		<link rel="modulepreload" href="/_app/pages/courses/2021/PrepMath/0-intro.md-4652e849.js">
+		<link rel="modulepreload" href="/_app/chunks/article-483456b6.js">
+		<link rel="stylesheet" href="/_app/assets/start-e8cdb125.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-6c0a8729.css">
+		<link rel="stylesheet" href="/_app/assets/article-e02d53d8.css">
+
+		<script type="module">
+			import { start } from "/_app/start-3d665f3b.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-742b7059.js"),
+						import("/_app/pages/courses/2021/PrepMath/0-intro.md-4652e849.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/courses/2021/PrepMath/0-intro",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+
+
+
+<article class="svelte-1sgb5oi"><h1 class="svelte-1sgb5oi">Introduzione &amp; Materiale</h1>
+    <main class="svelte-1sgb5oi"><p>Questo corso è il primo corso per alcune delle matricole (studenti del primo
+anno) di fisica, ed è un corso estremamente breve (1 settimana) inteso come
+preparazione per i corsi seguenti.</p>
+<p>Gli argomenti trattati sono quelli corrispondenti ai nomi delle lezioni elencate
+nella <a href=".">home</a>.</p>
+<h3>Perché matematica?</h3>
+<p>In particolare vorrei rispondere alla domanda: “a cosa mi servono tutte queste
+nozioni di matematica per affrontare dei corsi di fisica?“.<br>
+Per molti studenti la risposta è già ovvia, anche perché fa parte
+dell’esperienza con i corsi di fisica del liceo, ma probabilmente non così
+approfondita.</p>
+<p>Storicamente la studio della fisica ha spinto lo sviluppo di interi settori
+della matematica (si pensi all’origine dell’analisi, nel XVII secolo con Newton
+e Leibniz).</p>
+<p>L’idea di fisica che uno studente del primo anno può avere a volte non combacia
+con quello che scopre successivamente.
+Questo è anche uno dei motivi per cui è bello e interessante continuare
+a studiarla: non basta leggere un libro per “sapere la fisica”, neanche in modo
+superficiale. Più si scende più appaiono concetti originali e connessioni
+inattese.</p>
+<p>Per quanto riguarda la matematica:</p>
+<ul><li>la fisica sperimentale ⚗️ deve molto alla statistica, sia a quella elementare che
+avanzata: più complicata è una misura più raffinata deve essere l’analisi che
+porta ad essa, e una trattazione naïve può dare risultati completamente
+inconsistenti (una “misura” è inteso in senso lato: non è solo quello che si
+misura direttamente, ma in particolare quei risultati che possono solo essere
+derivati dalla composizione ed elaborazione di misure dirette)</li>
+<li>la fisica teorica 💫 (a tratti) è difficilmente distinguibile dalla matematica,
+quindi la domanda è quasi oziosa :)</li></ul>
+<h3>Non solo matematica…</h3>
+<p>Così come la matematica è, ed è stato, uno strumento fondamentale per la fisica,
+c’è un altro strumento che è diventato indispensabile per i fisici moderni, ed
+è il calcolo automatico (i.e. i computer).</p>
+<p>Nel caso della <strong>fisica sperimentale</strong> risulta più evidente: i fisici
+sperimentali si trovano a sviluppare apparati, raccogliere dati ed analizzarli,
+ed in ognuna di queste fasi l’uso di elettronica e software è cruciale (dalla
+simulazione degli apparati fisici, alla gestione dei dati e l’elaborazione
+grafica e statistica).</p>
+<p>Anche se meno evidente anche in <strong>fisica teorica</strong> l’utilizzo del software
+è spesso imprescindibile: per quanto la dimostrazioni di teoremi sia per lo più
+ancora materia di carta e penna (anche se non più
+un’<a href="https://en.wikipedia.org/wiki/Automated_theorem_proving" rel="nofollow">esclusiva</a>), ogni
+fisico teorico ricorda (o almeno dovrebbe) che la fisica è pur sempre una
+scienza sperimentale, quindi qualunque teoria astratta deve produrre predizioni
+quantitative (e anche qualitative!) da poter confrontare con gli
+esperimenti.<br>
+Per quanto una teoria possa essere bella e consistente, non può essere
+confermata da nient’altro che dal confronto con i risultati sperimentali!</p>
+<p>Per ottenere queste predizioni quantitative l’uso del software è sempre più
+spesso fondamentale:</p>
+<ul><li>direttamente: come la valutazione di funzioni complesse (soluzioni di
+equazioni differenziali o integrali)</li>
+<li>indirettamente: ci sono metodi molto interessanti la cui applicazione pratica
+è spesso possibile solo via software (simulazioni di fluidodinamica,
+simulazioni quantistiche su reticolo, …)</li></ul>
+<h3>E quindi?</h3>
+<p>Uno studente di fisica per definizione studia fisica, e quindi è chiaro che
+i corsi che più probabilmente preferirà sono quelli che hanno <em>fisica</em> nel nome.</p>
+<p>Ciononostante non ci sarebbe la fisica che conosciamo se non ci fosse la
+matematica, e tanti risultati (teorici e sperimentali) sarebbero impossibili
+senza l’elettronica e l’informatica.</p>
+<p>Da questo ne segue un consiglio: <strong>godetevi tutti i corsi, perché sono tutti utili
+e importanti!</strong><br>
+<em>anche se a volte diventa chiaro solo in seguito…</em></p>
+<p>(suggerimento/esempio: se vi ispira meccanica quantistica studiate bene algebra
+lineare, Heisenberg inizialmente chiamò la sua teoria <a href="https://en.wikipedia.org/wiki/Matrix_mechanics" rel="nofollow">“Meccanica delle
+matrici”</a>).</p>
+<h2>Materiale</h2>
+<p>Questo corso è solo un’introduzione, e <a href=".">queste note</a> sono un po’ il
+riferimento (ma non sostituiscono la partecipazione in classe).</p>
+<p>Delle note analoghe, su cui queste di fatto sono basate (con ulteriore materiale
+consigliato) si trovano sul <a href="https://vittorioerba.github.io/teaching_precorso2021.html" rel="nofollow">sito del
+corso</a> tenuto l’anno
+precedente.</p>
+<p>In ogni caso è bene che impariate <em>autonomamente</em> a trovare, e soprattutto
+<strong>selezionare</strong>, il materiale su cui studiare.
+Per fare questo gli strumenti principali sono:</p>
+<ul><li>i vostri colleghi: specialmente quelli più grandi, ma non troppo, hanno già
+avuto un’esperienza simile alla vostra e si sono già trovati a fare le vostre
+scelte, ma anche quelli al vostro anno, che sono nella stessa esatta
+situazione</li>
+<li>internet: su internet c’è praticamente di tutto, a partire da
+<a href="https://en.wikipedia.org/wiki/Main_Page" rel="nofollow">Wikipedia</a> (per quanto semplice
+è insostituibile) e tanti altri siti (suggerimento: se cercate in inglese
+trovate più risultati, spesso anche di qualità migliore)</li>
+<li>i consigli dei professori: in ogni caso, sentitevi sempre liberi di chiedere
+consiglio ai vostri docenti suggerimenti</li></ul>
+<h3>Esempi</h3>
+<p>Qualche esempio pratico:</p>
+<ul><li><p>gli studenti di Unipi (io mi sono laureato lì) avevano una cartella in cui
+conservavano il materiale dei vari corsi, il cui link era su <a href="http://studentifisicapisa.altervista.org/cartella-mega/" rel="nofollow">un sito aperto
+da qualcuno</a>, il link
+diretto alla cartella è </p>
+<p><a href="https://mega.nz/#F!uJsACb7Z!CgzObPGHkau7CNd3LcKjOw" rel="nofollow">https://mega.nz/#F!uJsACb7Z!CgzObPGHkau7CNd3LcKjOw</a></p>
+<p>può far comodo in generale, ma se</p></li>
+<li><p>gli studenti di Milano Bicocca hanno organizzato un sito apposito, cioè
+<a href="https://www.wikitolearn.org/" rel="nofollow">WikiToLearn</a> 🚀, per lo più dedicato a fisica,
+matematica e informatica (nel momento in cui scrivo)</p></li>
+<li><p>anche Wikipedia ha qualcosa di simile, si chiama
+<a href="https://www.wikiversity.org/" rel="nofollow">Wikiversity</a> 🏛 (come esempio si veda il <a href="https://it.wikiversity.org/wiki/Corso:Matematica" rel="nofollow">corso di
+matematica</a>), ma WikiToLearn
+mi sembra più avanzato come progetto</p></li>
+<li><p>su <a href="https://github.com" rel="nofollow">GitHub</a> ci sono diversi repository (in primissima
+approssimazione: cartelle con una descrizione) in cui sono elencate varie
+risorse utili, come:</p>
+<ol><li>tutti quelli che cominciano con <code>awesome-</code>, ad esempio
+<a href="https://github.com/rossant/awesome-math" rel="nofollow"><code>awesome-math</code></a>, sono di fatto
+liste di risorse dedicate a un argomento</li>
+<li>ma anche altri, come ad esempio
+<a href="https://github.com/ossu/computer-science" rel="nofollow">ossu</a> che cercano di mettere
+insieme e in ordine delle risorse per creare dei percorsi completi di
+autoapprendimento</li></ol></li>
+<li><p>a quanto pare esistono <a href="https://physics.info/" rel="nofollow">cose analoghe</a> anche più
+orientate verso le scuole superiori (o per fisica per quei corsi che non sono
+fisica :D)</p></li></ul>
+</main></article>
+<footer>
+</footer>
+
+
+
+			
+		</div>
+	</body>
+</html>
