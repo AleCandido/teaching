@@ -3,7 +3,7 @@ import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
 import { mdsvex } from 'mdsvex';
-import mdsvexConfig from "./mdsvex.config.js";
+import mdsvexConfig from './mdsvex.config.js';
 
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
@@ -27,11 +27,10 @@ const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 
 	kit: {
-		adapter: adapter({
-			paths: {
-				base: '/teaching',
-			},
-		}),
+		adapter: adapter(),
+		paths: {
+			base: '/teaching'
+		},
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	}
