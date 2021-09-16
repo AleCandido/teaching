@@ -9,17 +9,21 @@
         <slot/>
     </main>
 </article>
+<footer>
+    <slot name="footer"/>
+</footer>
 
 <style>
+    article {
+        max-width: 53em;
+        margin: auto;
+        margin-bottom: 10vh;
+    }
+
     h1 {
         font-size: 2em;
         margin: 1em 0 0.6em 1em;
     }
-    
-    article {
-        max-width: 53em;
-        margin: auto;
-    } 
 
     main :global(blockquote p) {
         font-style: italic;
