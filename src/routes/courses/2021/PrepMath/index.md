@@ -27,7 +27,6 @@ Anche dopo la fine del corso non esitate a contattarmi per dubbi e difficoltà:
     - Iniettività, suriettività e biunivocità
     - Funzioni reali, monotonia, massimi e minimi
     - Polinomi e funzioni razionali
-    - Funzioni irrazionali
     - Esponenziali e logaritmi
     - Funzioni trigonometriche
 

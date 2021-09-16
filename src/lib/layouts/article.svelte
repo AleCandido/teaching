@@ -2,6 +2,10 @@
     export let title;
 </script>
 
+<svelte:head>
+    <title>Teaching - {title}</title>    
+</svelte:head>
+
 
 <article>
     <h1>{title}</h1>

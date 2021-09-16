@@ -73,7 +73,7 @@ o anche $f: a \mapsto b$.
 
 </Definition>
 
-<Img alt="function" src="/static/2021-prepmath/function.png"/>
+<Img alt="function" src="/2021-prepmath/function.png"/>
 
 Nella figura il dominio è l'insieme $D$, mentre il codominio è chiamato $C$.
 Inoltre si chiama **immagine**:
@@ -85,7 +85,7 @@ Inoltre si chiama **immagine**:
 
 L'immagine dell'intero dominio è detta solamente **immagine**.
 
-<Img alt="not-a-function" src="/static/2021-prepmath/not-a-function.png"/>
+<Img alt="not-a-function" src="/2021-prepmath/not-a-function.png"/>
 
 Nell'immagine precedente ci sono due esempi dove il dominio e il codominio sono
 i numeri reali:
@@ -111,7 +111,7 @@ $$
 Graficamente il requisito corrisponde a richiedere che ogni punto del codominio
 sia raggiunto da non più di una freccia.
 
-<Img alt="injective function" src="/static/2021-prepmath/injective.png"/>
+<Img alt="injective function" src="/2021-prepmath/injective.png"/>
 
 <Definition title="Suriettiva">
 
@@ -125,12 +125,12 @@ $$
 </Definition>
 
 
-<Img alt="surjective function" src="/static/2021-prepmath/surjective.png"/>
+<Img alt="surjective function" src="/2021-prepmath/surjective.png"/>
 
 Anche in questo caso si può dare una rappresentazione grafica: corrisponde
 a richiedere che ogni punto del codominio sia raggiunto da almeno una freccia.
 
-<Img alt="surjective sets" src="/static/2021-prepmath/surjective-set.png"/>
+<Img alt="surjective sets" src="/2021-prepmath/surjective-set.png"/>
 
 <Definition title="Biunivoca">
 
@@ -149,7 +149,7 @@ Dato che in una funzione biunivoca:
 si può partire da un qualunque elemento del codominio e seguire la freccia al
 contrario ⬅.
 
-<Img alt="bijective sets" src="/static/2021-prepmath/bijective.png"/>
+<Img alt="bijective sets" src="/2021-prepmath/bijective.png"/>
 
 <Definition title="Funzione Inversa">
 
@@ -196,7 +196,7 @@ In particolare questa definizione si applica non solo alle funzioni $f: \reals
 \to \reals$, ma a tutte le funzioni $f: A \to B$ in cui entrambi gli insiemi
 [siano ordinati](https://it.wikipedia.org/wiki/Relazione_d%27ordine).
 
-<Img alt="monotonicity" src="/static/2021-prepmath/monotonic.png"/>
+<Img alt="monotonicity" src="/2021-prepmath/monotonic.png"/>
 
 **Osservazione:** se una funzione è strettamente monotona allora è iniettiva.
 
@@ -208,7 +208,7 @@ locali, proprio perché la distanza ci dice cosa è *locale*, mentre in un insie
 generico tutti gli elementi sono equivalenti e non hanno relazione tra loro.
 
 
-<Img alt="max-min-flex" src="/static/2021-prepmath/maxmin.png"/>
+<Img alt="max-min-flex" src="/2021-prepmath/maxmin.png"/>
 
 <Definition title="Massimo locale">
 
@@ -239,10 +239,36 @@ precedenti valgono non per un intorno $I$, ma per tutto il dominio $D$.
 Il massimo/minimo globale può *non esistere* (nel caso di un massimo/minimo
 stretto se esiste è unico). 
 
-<Img alt="max-mins" src="/static/2021-prepmath/maxmins.png"/>
+<Img alt="max-mins" src="/2021-prepmath/maxmins.png"/>
 
 Di massimi e minimi locali invece ne possono esistere *molti* per una stessa
 funzione.
+
+## Funzioni specifiche
+
+Le seguenti classi di funzioni sono di particolare interesse fra le funzioni
+reali:
+
+- le [funzioni
+	polinomiali](https://en.wikipedia.org/wiki/Polynomial#Polynomial_functions),
+	sono funzioni ottenute definite sulla base di polinomi (non sono la stessa
+	cosa dei polinomi, che invece sono oggetti formali), cioé sommando potenze
+	della variabile moltiplicate per coefficienti reali
+- le [funzioni razionali](https://en.wikipedia.org/wiki/Rational_function) si
+	ottengono come rapporti fra funzioni polinomiali
+- le [funzioni
+	trigonometriche](https://en.wikipedia.org/wiki/Trigonometric_functions) sono
+	funzioni legate agli angoli (oppure equivalentemente al cerchio o ai triangoli
+	rettangoli), fra cui il $\sin$, $\cos$ e la $\tan$
+- l'[esponenziale](https://en.wikipedia.org/wiki/Exponential_function) e il
+	[logaritmo](https://en.wikipedia.org/wiki/Logarithm) (che è l'inversa) sono
+	funzioni che hanno un ruolo speciale nell'analisi
+
+Non è particolarmente utile fare una revisione di tutte le proprietà di queste
+funzioni, ma una cosa che vale la pena sapere è che le ultime due categorie non
+sono realmente distinte, ma connesse dalla [formula di
+Eulero](https://en.wikipedia.org/wiki/Euler%27s_formula) (e quindi la
+connessione è evidente solo quando vengono considerate come funzioni complesse).
 
 <!-- vim: set spelllang=it: -->
 

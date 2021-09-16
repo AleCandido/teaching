@@ -20,6 +20,10 @@
     export let years;
 </script>
 
+<svelte:head>
+	<title>Teaching</title>
+</svelte:head>
+
 <header>
     <h1 class="text-6xl text-center m-10">
         Teaching Material
