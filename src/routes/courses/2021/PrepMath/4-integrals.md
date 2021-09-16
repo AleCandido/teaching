@@ -1,7 +1,6 @@
 ---
-title: Introduzione & Materiale
+title: Integrali
 ---
 
-ciao
 
 
