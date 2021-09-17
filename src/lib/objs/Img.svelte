@@ -15,6 +15,4 @@
 	const teaching = dev ? '' : '/teaching';
 </script>
 
-<div>
-	<img {alt} src="{teaching}{src}" class="mx-auto px-4 py-2 {alignment}" />
-</div>
+<img {alt} src="{teaching}{src}" class="mx-auto px-4 py-2 {alignment}" />
