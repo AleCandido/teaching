@@ -7,17 +7,17 @@
 
 		
 
-		<link rel="modulepreload" href="https://www.annibale.dev/teaching/_app/start-10f3380d.js">
+		<link rel="modulepreload" href="https://www.annibale.dev/teaching/_app/start-c8b485e8.js">
 		<link rel="modulepreload" href="https://www.annibale.dev/teaching/_app/chunks/vendor-2cf9c6a5.js">
-		<link rel="modulepreload" href="https://www.annibale.dev/teaching/_app/pages/__layout.svelte-0ffed5c6.js">
-		<link rel="modulepreload" href="https://www.annibale.dev/teaching/_app/pages/courses/2021/PrepMath/index.md-807791ef.js">
-		<link rel="modulepreload" href="https://www.annibale.dev/teaching/_app/chunks/article-711fcf7c.js">
+		<link rel="modulepreload" href="https://www.annibale.dev/teaching/_app/pages/__layout.svelte-77a5f6ea.js">
+		<link rel="modulepreload" href="https://www.annibale.dev/teaching/_app/pages/courses/2021/PrepMath/index.md-53a41a41.js">
+		<link rel="modulepreload" href="https://www.annibale.dev/teaching/_app/chunks/article-c7d0f11d.js">
 		<link rel="stylesheet" href="https://www.annibale.dev/teaching/_app/assets/start-e8cdb125.css">
-		<link rel="stylesheet" href="https://www.annibale.dev/teaching/_app/assets/pages/__layout.svelte-a360678b.css">
-		<link rel="stylesheet" href="https://www.annibale.dev/teaching/_app/assets/article-e02d53d8.css">
+		<link rel="stylesheet" href="https://www.annibale.dev/teaching/_app/assets/pages/__layout.svelte-890ad785.css">
+		<link rel="stylesheet" href="https://www.annibale.dev/teaching/_app/assets/article-795dd8d6.css">
 
 		<script type="module">
-			import { start } from "https://www.annibale.dev/teaching/_app/start-10f3380d.js";
+			import { start } from "https://www.annibale.dev/teaching/_app/start-c8b485e8.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/teaching","assets":"https://www.annibale.dev/teaching"},
@@ -25,17 +25,17 @@
 				host: location.host,
 				route: true,
 				spa: false,
-				trailing_slash: "never",
+				trailing_slash: "always",
 				hydrate: {
 					status: 200,
 					error: null,
 					nodes: [
-						import("https://www.annibale.dev/teaching/_app/pages/__layout.svelte-0ffed5c6.js"),
-						import("https://www.annibale.dev/teaching/_app/pages/courses/2021/PrepMath/index.md-807791ef.js")
+						import("https://www.annibale.dev/teaching/_app/pages/__layout.svelte-77a5f6ea.js"),
+						import("https://www.annibale.dev/teaching/_app/pages/courses/2021/PrepMath/index.md-53a41a41.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/courses/2021/PrepMath",
+						path: "/courses/2021/PrepMath/",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -43,7 +43,7 @@
 			});
 		</script>
 	</head>
-	<body>
+	<body class="p-4">
 		<div id="svelte">
 
 
@@ -52,8 +52,9 @@
 
 
 
-<article class="svelte-1sgb5oi"><h1 class="svelte-1sgb5oi">Precorso matricole 2021/22</h1>
-    <main class="svelte-1sgb5oi"><blockquote><p>This course is for first year physics students @ University of Milan, for this
+<article class="svelte-1srs85"><h1 class="svelte-1srs85">Precorso matricole 2021/22</h1>
+    <p class="ml-auto mr-6 mb-8 -mt-10 text-right text-lg underline"><a href=".." class="border border-double border-black p-2 svelte-1srs85">Back</a></p>
+    <main class="svelte-1srs85"><blockquote><p>This course is for first year physics students @ University of Milan, for this
 reason the course material is provided in Italian only</p></blockquote>
 <p>Il corso consiste di cinque lezioni, il cui obiettivo è di richiamare gli
 elementi fondamentali di matematica (insiemi, analisi, algebra lineare) che
@@ -64,33 +65,34 @@ questo corso non è anticipare quella trattazione in modo ridondante.</p>
 <p>Anche dopo la fine del corso non esitate a contattarmi per dubbi e difficoltà:</p>
 <div style="margin: 1em 0 0 2em;"><a href="mailto:alessandro.candido@mi.infn.it" target="_blank">alessandro.candido@mi.infn.it</a></div>
 <h2>Lezioni</h2>
-<ol start="0"><li><p><a href="./PrepMath/0-intro">Introduzione &amp; materiale</a></p></li>
-<li><p><a href="./PrepMath/1-functions">Funzioni</a></p>
+<ol start="0"><li><p><a href="0-intro">Introduzione &amp; materiale</a></p></li>
+<li><p><a href="1-functions">Funzioni</a></p>
 <ul><li>Definizione, dominio, codominio</li>
 <li>Iniettività, suriettività e biunivocità</li>
 <li>Funzioni reali, monotonia, massimi e minimi</li>
 <li>Polinomi e funzioni razionali</li>
 <li>Esponenziali e logaritmi</li>
 <li>Funzioni trigonometriche</li></ul></li>
-<li><p><a href="./PrepMath/2-derivatives">Derivate</a></p>
+<li><p><a href="2-derivatives">Derivate</a></p>
 <ul><li>Motivazione e definizione fisica</li>
 <li>Derivate delle funzioni elementari</li>
 <li>Regole di derivazione</li>
 <li>Derivate e monotonia</li>
 <li>Ottimizzazione di funzioni</li></ul></li>
-<li><p><a href="./PrepMath/3-study">Studi di funzione</a></p>
+<li><p><a href="3-study">Studi di funzione</a></p>
 <ul><li>Cosa vuol dire studiare una funzione?</li>
 <li>Esercizi su studi di funzioni</li></ul></li>
-<li><p><a href="./PrepMath/4-integrals">Integrali</a></p>
+<li><p><a href="4-integrals">Integrali</a></p>
 <ul><li>Motivazione e definizione fisica degli integrali definiti</li>
 <li>Integrali indefiniti e relazione con gli integrali definiti</li>
 <li>Integrali delle funzioni elementari</li>
 <li>Regole di integrazione</li></ul></li>
-<li><p><a href="./PrepMath/5-vectors">Vettori</a></p>
+<li><p><a href="5-vectors">Vettori</a></p>
 <ul><li>Definizione di vettore</li>
 <li>Versori e componenti cartesiane</li>
 <li>Operazioni con i vettori</li></ul></li></ol>
-</main></article>
+</main>
+    <p class="mx-auto mt-8 text-lg text-center underline"><a href=".." class="border border-double border-black p-2 svelte-1srs85">Back</a></p></article>
 <footer>
 </footer>
 
