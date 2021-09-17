@@ -8,7 +8,9 @@ import mdsvexConfig from './mdsvex.config.js';
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 
-const production = !process.env.ROLLUP_WATCH;
+import process from "process";
+
+const production = process.env.NODE_ENV !== "test";
 
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
@@ -29,11 +31,12 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			assets: "https://www.annibale.dev/teaching",
-			base: '/teaching'
+			assets: production? "https://www.annibale.dev/teaching": "",
+			base: production? '/teaching': ''
 		},
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		target: '#svelte',
+		trailingSlash: "always"
 	}
 };
 

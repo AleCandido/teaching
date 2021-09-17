@@ -9,9 +9,15 @@
 
 <article>
     <h1>{title}</h1>
+    <p class="ml-auto mr-6 mb-8 -mt-10 text-right text-lg underline">
+        <a href=".." class="border border-double border-black p-2">Back</a>
+    </p>
     <main>
         <slot/>
     </main>
+    <p class="mx-auto mt-8 text-lg text-center underline">
+        <a href=".." class="border border-double border-black p-2">Back</a>
+    </p>
 </article>
 <footer>
     <slot name="footer"/>
@@ -55,7 +61,7 @@
         margin: 1em 0 0 0.1em;
     }
 
-    main :global(a) {
+    a, main :global(a) {
         color: #555;
     }
     main :global(a:hover) {
