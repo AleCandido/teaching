@@ -74,7 +74,7 @@ spesso fondamentale:
 ### E quindi?
 
 Uno studente di fisica per definizione studia fisica, e quindi è chiaro che
-i corsi che più probabilmente preferirà sono quelli che hanno *fisica* nel nome.
+i corsi che più probabilmente preferirà sono quelli che hanno _fisica_ nel nome.
 
 Ciononostante non ci sarebbe la fisica che conosciamo se non ci fosse la
 matematica, e tanti risultati (teorici e sperimentali) sarebbero impossibili
@@ -82,7 +82,7 @@ senza l'elettronica e l'informatica.
 
 Da questo ne segue un consiglio: **godetevi tutti i corsi, perché sono tutti utili
 e importanti!**<br>
-*anche se a volte diventa chiaro solo in seguito...*
+_anche se a volte diventa chiaro solo in seguito..._
 
 (suggerimento/esempio: se vi ispira meccanica quantistica studiate bene algebra
 lineare, Heisenberg inizialmente chiamò la sua teoria ["Meccanica delle
@@ -98,7 +98,7 @@ consigliato) si trovano sul [sito del
 corso](https://vittorioerba.github.io/teaching_precorso2021.html) tenuto l'anno
 precedente.
 
-In ogni caso è bene che impariate *autonomamente* a trovare, e soprattutto
+In ogni caso è bene che impariate _autonomamente_ a trovare, e soprattutto
 **selezionare**, il materiale su cui studiare.
 Per fare questo gli strumenti principali sono:
 
@@ -120,11 +120,12 @@ Qualche esempio pratico:
 - gli studenti di Unipi (io mi sono laureato lì) avevano una cartella in cui
   conservavano il materiale dei vari corsi, il cui link era su [un sito aperto
   da qualcuno](http://studentifisicapisa.altervista.org/cartella-mega/), il link
-  diretto alla cartella è 
+  diretto alla cartella è
 
   [https://mega.nz/#F!uJsACb7Z!CgzObPGHkau7CNd3LcKjOw](https://mega.nz/#F!uJsACb7Z!CgzObPGHkau7CNd3LcKjOw)
 
   può far comodo in generale, ma se
+
 - gli studenti di Milano Bicocca hanno organizzato un sito apposito, cioè
   [WikiToLearn](https://www.wikitolearn.org/) 🚀, per lo più dedicato a fisica,
   matematica e informatica (nel momento in cui scrivo)
@@ -143,9 +144,9 @@ Qualche esempio pratico:
      [ossu](https://github.com/ossu/computer-science) che cercano di mettere
      insieme e in ordine delle risorse per creare dei percorsi completi di
      autoapprendimento
+
 - a quanto pare esistono [cose analoghe](https://physics.info/) anche più
   orientate verso le scuole superiori (o per fisica per quei corsi che non sono
   fisica :D)
-
 
 <!-- vim: set spelllang=it: -->

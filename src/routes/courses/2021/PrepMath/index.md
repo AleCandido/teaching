@@ -23,34 +23,37 @@ Anche dopo la fine del corso non esitate a contattarmi per dubbi e difficoltà:
 
 0. [Introduzione & materiale](0-intro)
 1. [Funzioni](1-functions)
-    - Definizione, dominio, codominio
-    - Iniettività, suriettività e biunivocità
-    - Funzioni reali, monotonia, massimi e minimi
-    - Polinomi e funzioni razionali
-    - Esponenziali e logaritmi
-    - Funzioni trigonometriche
+
+   - Definizione, dominio, codominio
+   - Iniettività, suriettività e biunivocità
+   - Funzioni reali, monotonia, massimi e minimi
+   - Polinomi e funzioni razionali
+   - Esponenziali e logaritmi
+   - Funzioni trigonometriche
 
 2. [Derivate](2-derivatives)
-    - Motivazione e definizione fisica
-    - Derivate delle funzioni elementari
-    - Regole di derivazione
-    - Derivate e monotonia
-    - Ottimizzazione di funzioni
+
+   - Motivazione e definizione fisica
+   - Derivate delle funzioni elementari
+   - Regole di derivazione
+   - Derivate e monotonia
+   - Ottimizzazione di funzioni
 
 3. [Studi di funzione](3-study)
-    - Cosa vuol dire studiare una funzione?
-    - Esercizi su studi di funzioni
+
+   - Cosa vuol dire studiare una funzione?
+   - Esercizi su studi di funzioni
 
 4. [Integrali](4-integrals)
-    - Motivazione e definizione fisica degli integrali definiti
-    - Integrali indefiniti e relazione con gli integrali definiti
-    - Integrali delle funzioni elementari
-    - Regole di integrazione
+
+   - Motivazione e definizione fisica degli integrali definiti
+   - Integrali indefiniti e relazione con gli integrali definiti
+   - Integrali delle funzioni elementari
+   - Regole di integrazione
 
 5. [Vettori](5-vectors)
-    - Definizione di vettore
-    - Versori e componenti cartesiane
-    - Operazioni con i vettori
-
+   - Definizione di vettore
+   - Versori e componenti cartesiane
+   - Operazioni con i vettori
 
 <!-- vim: set spelllang=it: -->

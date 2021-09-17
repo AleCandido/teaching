@@ -1,6 +1,3 @@
 ---
 title: Studi di Funzione
 ---
-
-
-

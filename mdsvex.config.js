@@ -1,14 +1,21 @@
-import remarkMath from 'remark-math'; 
+import remarkMath from 'remark-math';
 import remarkAutolinkHeadings from 'remark-autolink-headings';
 import remarkGFM from 'remark-gfm';
-import remarkGithub from 'remark-github'
-import remarkAbbr from 'remark-abbr'
+import remarkGithub from 'remark-github';
+import remarkAbbr from 'remark-abbr';
 
 import rehypeKatex from 'rehype-katex';
 import rehypeSlug from 'rehype-slug';
 
 import katex from 'katex';
 import visit from 'unist-util-visit';
+
+const macros = {
+	'\\f': '#1f(#2)',
+	'\\dd': '\\text{d}',
+	'\\dv': '\\frac{\\dd #1}{\\dd #2}',
+	'\\dx': '\\frac{\\dd #1}{\\dd x}'
+};
 
 const correctHastTree = () => (tree) => {
 	visit(tree, 'text', (node) => {
@@ -30,7 +37,7 @@ const katexBlocks = () => (tree) => {
 				strict: 'warn',
 				output: 'htmlAndMathml',
 				trust: false,
-				macros: { '\\f': '#1f(#2)' }
+				macros
 			});
 
 			node.type = 'raw';
@@ -40,17 +47,17 @@ const katexBlocks = () => (tree) => {
 };
 
 export default {
-	extensions: [".svx", ".md"],
+	extensions: ['.svx', '.md'],
 	smartypants: {
-		dashes: "oldschool",
+		dashes: 'oldschool'
 	},
-	layout: { 
+	layout: {
 		project: './src/lib/layouts/project.svelte',
 		_: './src/lib/layouts/article.svelte'
 	},
 	remarkPlugins: [
 		remarkMath,
-		katexBlocks,
+		katexBlocks
 		// remarkAutolinkHeadings,
 		// remarkGFM,
 		// remarkGithub,
@@ -58,13 +65,13 @@ export default {
 	],
 	rehypePlugins: [
 		correctHastTree,
-		rehypeKatex,
+		[rehypeKatex, {macros}]
 		// rehypeSlug,
 	],
 	highlight: {
 		alias: {
-			ts: "typescript",
-			md: "markdown",
+			ts: 'typescript',
+			md: 'markdown'
 		}
-	},
+	}
 };

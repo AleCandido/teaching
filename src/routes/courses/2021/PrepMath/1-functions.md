@@ -7,8 +7,8 @@ title: Funzioni
 	import Img from "$lib/objs/Img.svelte";
 </script>
 
-Nota: *Dato che la tecnologia non mi supporta gli insiemi sono indicati con parentesi
-quadre, anziché le solite parentesi graffe...*
+Nota: _Dato che la tecnologia non mi supporta gli insiemi sono indicati con parentesi
+quadre, anziché le solite parentesi graffe..._
 <br>
 
 ## Definizione
@@ -23,8 +23,6 @@ concetto di insieme.
 Per quanto interessante questo va oltre l'interesse di questo corso, ma
 è interessante perché anche il concetto di **funzione** non solo è relativo agli
 insiemi, ma la definizione stessa consiste in un insieme.
-
-
 
 <Definition title="Prodotto Cartesiano">
 
@@ -42,22 +40,24 @@ Un generico sottoinsieme del prodotto cartesiano di due insiemi si dice
 
 Due tipi specifici di relazioni sono:
 
-- le *relazioni di equivalenza*, che sono relazioni sul prodotto di un insieme
-	con se stesso $A \times A$, e soddisfano le seguenti proprietà:
-	1. *riflessività*: la "diagonale" è sempre inclusa, cioè tutti gli elementi di
-		 $(a,a)$ sono inclusi
-	2. *simmetria*: se $(a,b)$ è incluso, allora anche $(b,a)$
-	3. *transitività*: se $(a,b)$ e $(b,c)$ sono inclusi, allora anche $(a,c)$
+- le _relazioni di equivalenza_, che sono relazioni sul prodotto di un insieme
+  con se stesso $A \times A$, e soddisfano le seguenti proprietà:
 
-	Spesso si scrive una relazione di equivalenza con un simbolo, per cui se
-	è $(a,b)$ è incluso allora si dice $a \sim b$. La relazione di equivalenza più
-	nota è l'uguaglianza $=$.
-- le *funzioni*, che per ogni elemento del primo insieme includono uno e una
-	sola coppia che lo contiene
+  1.  _riflessività_: la "diagonale" è sempre inclusa, cioè tutti gli elementi di
+      $(a,a)$ sono inclusi
+  2.  _simmetria_: se $(a,b)$ è incluso, allora anche $(b,a)$
+  3.  _transitività_: se $(a,b)$ e $(b,c)$ sono inclusi, allora anche $(a,c)$
+
+  Spesso si scrive una relazione di equivalenza con un simbolo, per cui se
+  è $(a,b)$ è incluso allora si dice $a \sim b$. La relazione di equivalenza più
+  nota è l'uguaglianza $=$.
+
+- le _funzioni_, che per ogni elemento del primo insieme includono uno e una
+  sola coppia che lo contiene
 
 <Definition title="Funzione">
 
-E' una *relazione* sul prodotto $A \times B$ tale che $\forall a \in A$ esiste
+E' una _relazione_ sul prodotto $A \times B$ tale che $\forall a \in A$ esiste
 una e una sola coppia $(a,b)$, con $b \in B$
 
 - l'insieme $A$ è detto **dominio** della funzione
@@ -78,10 +78,10 @@ o anche $f: a \mapsto b$.
 Nella figura il dominio è l'insieme $D$, mentre il codominio è chiamato $C$.
 Inoltre si chiama **immagine**:
 
-- sia l'*elemento* corrispondente a un elemento del dominio, attraverso la
-	funzione, e si dice "l'immagine dell'elemento $a$ è $b$"
-- sia l'*insieme* delle immagini di qualunque sottoinsieme di elementi del
-	dominio, e si dice "l'immagine dell'insieme $X$ è $Y$"
+- sia l'_elemento_ corrispondente a un elemento del dominio, attraverso la
+  funzione, e si dice "l'immagine dell'elemento $a$ è $b$"
+- sia l'_insieme_ delle immagini di qualunque sottoinsieme di elementi del
+  dominio, e si dice "l'immagine dell'insieme $X$ è $Y$"
 
 L'immagine dell'intero dominio è detta solamente **immagine**.
 
@@ -91,16 +91,16 @@ Nell'immagine precedente ci sono due esempi dove il dominio e il codominio sono
 i numeri reali:
 
 1. nel primo caso non è una funzione perché non tutti gli elementi del dominio
-	 hanno un'immagine, ma lo diventa restringendo il dominio
+   hanno un'immagine, ma lo diventa restringendo il dominio
 2. nel secondo caso non è una funzione sia per il motivo precedente, sia poiché
-	 ad alcuni punti sono associate due immagini
+   ad alcuni punti sono associate due immagini
 
 ## Proprietà
 
 <Definition title="Iniettiva">
 
-Una funzione è **iniettiva** se ogni elemento del codominio ha *al più una
-preimmagine*, cioè:
+Una funzione è **iniettiva** se ogni elemento del codominio ha _al più una
+preimmagine_, cioè:
 
 $$
 x_1 \neq x_2 \implies f(x_1) \neq f(x_2)
@@ -115,15 +115,14 @@ sia raggiunto da non più di una freccia.
 
 <Definition title="Suriettiva">
 
-Una funzione è **suriettiva** (o *surgettiva*) se ogni elemento del codominio ha
-*almeno una preimmagine*, cioè:
+Una funzione è **suriettiva** (o _surgettiva_) se ogni elemento del codominio ha
+_almeno una preimmagine_, cioè:
 
 $$
 \forall y \in C ~ \exists x \in D : f(x) = y
 $$
 
 </Definition>
-
 
 <Img alt="surjective function" src="/2021-prepmath/surjective.png"/>
 
@@ -134,8 +133,9 @@ a richiedere che ogni punto del codominio sia raggiunto da almeno una freccia.
 
 <Definition title="Biunivoca">
 
-Una funzione è **biunivoca** (o *bigettiva*) se è sia iniettiva che suriettiva,
+Una funzione è **biunivoca** (o _bigettiva_) se è sia iniettiva che suriettiva,
 cioè:
+
 $$
 \forall y \in C ~ \exists ! x \in D : f(x) = y
 $$
@@ -143,6 +143,7 @@ $$
 </Definition>
 
 Dato che in una funzione biunivoca:
+
 - ogni elemento del codominio è coperto da una freccia ➡ (suriettività)
 - ma non più di una freccia (iniettività)
 
@@ -162,7 +163,6 @@ $$
 
 </Definition>
 
-
 ## Proprietà delle funzioni reali
 
 Gli insiemi sono strutture molto generiche, nel senso che hanno davvero poche
@@ -178,13 +178,13 @@ definizioni aggiuntive anche per ulteriori categorie di funzioni.
 Una funzione è **monotòna** se:
 
 - preserva l'ordine (funzione **crescente**)
-$$
-x_1 \geq x_2 \implies f(x_1) \geq f(x_2)
-$$
+  $$
+  x_1 \geq x_2 \implies f(x_1) \geq f(x_2)
+  $$
 - inverte l'ordine (funzione **decrescente**)
-$$
-x_1 \geq x_2 \implies f(x_1) \leq f(x_2)
-$$
+  $$
+  x_1 \geq x_2 \implies f(x_1) \leq f(x_2)
+  $$
 
 Rimuovendo l'uguaglianza ($\geq ~\to~ >$) si ottengono
 rispettivamente la definizione di funzione **strettamente crescente**
@@ -202,18 +202,18 @@ In particolare questa definizione si applica non solo alle funzioni $f: \reals
 
 Un'altra proprietà dei numeri reali è quella di avere una "prossimità"
 (formalmente in realtà una
-[*distanza*](https://it.wikipedia.org/wiki/Spazio_metrico)) tra loro.
+[_distanza_](https://it.wikipedia.org/wiki/Spazio_metrico)) tra loro.
 In base a questa relazione è possibile dare quindi la definizione di proprietà
-locali, proprio perché la distanza ci dice cosa è *locale*, mentre in un insieme
+locali, proprio perché la distanza ci dice cosa è _locale_, mentre in un insieme
 generico tutti gli elementi sono equivalenti e non hanno relazione tra loro.
-
 
 <Img alt="max-min-flex" src="/2021-prepmath/maxmin.png"/>
 
 <Definition title="Massimo locale">
 
-Si dice *massimo locale* per una funzione $f: D \to C$ un punto $w \in D$ tale
-per cui esiste un intorno $I$ di $w$ in cui 
+Si dice _massimo locale_ per una funzione $f: D \to C$ un punto $w \in D$ tale
+per cui esiste un intorno $I$ di $w$ in cui
+
 $$
 \forall x \in I ~ f(x) \leq f(w)
 $$
@@ -223,6 +223,7 @@ $$
 <Definition title="Minimo locale">
 
 Nozione analoga alla precedente, ma:
+
 $$
 \forall x \in I ~ f(x) \geq f(w)
 $$
@@ -236,12 +237,12 @@ ordinamento.
 
 Un massimo o minimo **globale** è invece un punto per cui le condizioni
 precedenti valgono non per un intorno $I$, ma per tutto il dominio $D$.
-Il massimo/minimo globale può *non esistere* (nel caso di un massimo/minimo
-stretto se esiste è unico). 
+Il massimo/minimo globale può _non esistere_ (nel caso di un massimo/minimo
+stretto se esiste è unico).
 
 <Img alt="max-mins" src="/2021-prepmath/maxmins.png"/>
 
-Di massimi e minimi locali invece ne possono esistere *molti* per una stessa
+Di massimi e minimi locali invece ne possono esistere _molti_ per una stessa
 funzione.
 
 ## Funzioni specifiche
@@ -250,19 +251,19 @@ Le seguenti classi di funzioni sono di particolare interesse fra le funzioni
 reali:
 
 - le [funzioni
-	polinomiali](https://en.wikipedia.org/wiki/Polynomial#Polynomial_functions),
-	sono funzioni ottenute definite sulla base di polinomi (non sono la stessa
-	cosa dei polinomi, che invece sono oggetti formali), cioé sommando potenze
-	della variabile moltiplicate per coefficienti reali
+  polinomiali](https://en.wikipedia.org/wiki/Polynomial#Polynomial_functions),
+  sono funzioni ottenute definite sulla base di polinomi (non sono la stessa
+  cosa dei polinomi, che invece sono oggetti formali), cioé sommando potenze
+  della variabile moltiplicate per coefficienti reali
 - le [funzioni razionali](https://en.wikipedia.org/wiki/Rational_function) si
-	ottengono come rapporti fra funzioni polinomiali
+  ottengono come rapporti fra funzioni polinomiali
 - le [funzioni
-	trigonometriche](https://en.wikipedia.org/wiki/Trigonometric_functions) sono
-	funzioni legate agli angoli (oppure equivalentemente al cerchio o ai triangoli
-	rettangoli), fra cui il $\sin$, $\cos$ e la $\tan$
+  trigonometriche](https://en.wikipedia.org/wiki/Trigonometric_functions) sono
+  funzioni legate agli angoli (oppure equivalentemente al cerchio o ai triangoli
+  rettangoli), fra cui il $\sin$, $\cos$ e la $\tan$
 - l'[esponenziale](https://en.wikipedia.org/wiki/Exponential_function) e il
-	[logaritmo](https://en.wikipedia.org/wiki/Logarithm) (che è l'inversa) sono
-	funzioni che hanno un ruolo speciale nell'analisi
+  [logaritmo](https://en.wikipedia.org/wiki/Logarithm) (che è l'inversa) sono
+  funzioni che hanno un ruolo speciale nell'analisi
 
 Non è particolarmente utile fare una revisione di tutte le proprietà di queste
 funzioni, ma una cosa che vale la pena sapere è che le ultime due categorie non
@@ -271,4 +272,3 @@ Eulero](https://en.wikipedia.org/wiki/Euler%27s_formula) (e quindi la
 connessione è evidente solo quando vengono considerate come funzioni complesse).
 
 <!-- vim: set spelllang=it: -->
-
