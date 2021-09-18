@@ -9,13 +9,13 @@
 <article>
 	<h1>{title}</h1>
 	<p class="ml-auto mr-6 mb-8 -mt-10 text-right text-lg underline">
-		<a href=".." class="border border-double border-black p-2">Back</a>
+		<a href="." class="border border-double border-black p-2">Back</a>
 	</p>
-	<main>
+	<main class="overflow-auto">
 		<slot />
 	</main>
 	<p class="mx-auto mt-8 text-lg text-center underline">
-		<a href=".." class="border border-double border-black p-2">Back</a>
+		<a href="." class="border border-double border-black p-2">Back</a>
 	</p>
 </article>
 <footer>

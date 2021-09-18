@@ -31,12 +31,12 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			assets: production ? 'https://www.annibale.dev/teaching' : '',
+			// assets: production ? 'https://www.annibale.dev/teaching' : '',
 			base: production ? '/teaching' : ''
 		},
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
-		trailingSlash: 'always'
+		// trailingSlash: 'always'
 	}
 };
 

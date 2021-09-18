@@ -7,9 +7,9 @@
 
 	let alignment = '';
 	if (align === 'right') {
-		alignment = `float-right`;
+		alignment = `md:float-right`;
 	} else if (align === 'left') {
-		alignment = `float-light`;
+		alignment = `md:float-left`;
 	}
 
 	const teaching = dev ? '' : '/teaching';

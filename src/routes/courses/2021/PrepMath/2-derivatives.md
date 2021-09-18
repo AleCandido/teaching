@@ -152,7 +152,7 @@ La derivata prima e' associata alla pendenza della curva per cui:
 
 <br class="m-10">
 
-<Img alt="second derivative" src="/2021-prepmath/dx2.png" align="right"/>
+<Img alt="second derivative" src="/2021-prepmath/dx2.png" align="left"/>
 
 Dato che la derivata di una funzione e' ancora una funzione, allora puo' essere
 anch'essa derivata.
