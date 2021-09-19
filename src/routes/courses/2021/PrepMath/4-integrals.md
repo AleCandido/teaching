@@ -165,10 +165,29 @@ note:
 
 <Math display latex="\int \frac 1 {'{'}1 + x^2{'}'} \dd x = \arctan(x) + C"/>
 
-
 ## Regole di integrazione
 
+Il procedimento di base quindi e' quello di "consultare una tabella di
+derivate", individuando a quale derivata corrisponde la funzione integranda,
+e di conseguenza qual'e' la sua primitiva (sempre a meno di una costante).
+
+Oltre a cio' ci sono delle *"tecniche"* per risolvere semplificare l'integrale
+in step consecutivi.
+Due tecniche principali, sono:
+
+- l'integrazione per sostituzione
+- l'integrazione per parti
+
 ### Per sostituzione
+
+Si procede attraverso un cambio di variabile di integrazione, attraverso una
+funzione biunivoca.
+Questo corrisponde alla derivazione di una funzione composta, infatti si parte
+scrivendo $x = g(y)$
+
+<Math display latex="\int f(x) \dd x = \int f(g(y)) \frac{'{'}\dd
+x {'}'}{'{'}\dd y{'}'} \dd y = \int \frac{'{'}f \circ g (y){'}'}{'{'}\dv
+g y {'}'} \dd y"/>
 
 ### Per parti
 
@@ -182,6 +201,5 @@ e integrando a destra e sinistra si ottiene
 $$
 \int_a^b \dx f \cdot g = f \cdot g \Big|_a^b - \int_a^b f \cdot \dx g
 $$
-
 
 <!-- vim: set spelllang=it: -->
