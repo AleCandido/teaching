@@ -136,10 +136,29 @@ $$
 
 ### Somma di vettori
 
+<Img alt="scale" src="/2021-prepmath/vectors-sum.png"/>
+
+### Esempi
+
+- i polinomi sono vettori
+- le funzioni sono vettori
+
 ### Componenti
+
+Decomposizione in componenti, cioè usiamo i vettori che abbiamo introdotto
+(definizione 4) in un linguaggio che è più affine alla definizione 3 (funziona
+bene con un numero finito di componenti, ma non con *spazi di dimensione
+infinita*).
+
+Riconsiderando il *prodotto per scalare* in questo linguaggio:
+
+
+Riconsiderando anche la somma
 
 ## Prodotto scalare
 
+Il *prodotto scalare* è diverso dal *prodotto **per** uno scalare*, infatti il
+secondo era un'operazione da $ \reals \times V \to V $, mentre questo è:
 
 $$
 \cdot : V \times V \to \reals
@@ -149,6 +168,10 @@ Il prodotto scalare esiste per vettori di qualunque dimensione (e ne esisteranno
 più d'uno, ma per ora noi usiamo quello canonico).
 
 ### 3D
+
+### Componenti
+
+Riconsiderando anche quest'operazione in componenti 
 
 ## Prodotto vettoriale
 
@@ -160,5 +183,8 @@ Il prodotto vettoriale esiste solo in $3$ dimensioni, né meno né più.
 Intuitivamente il motivo è che rappresenta un'*area*, e in 3D a ogni area si può
 associare un vettore (modulo pari alla superficie, e direzione ortogonale
 all'area).
+
+### Componenti
+
 
 <!-- vim: set spelllang=it: -->

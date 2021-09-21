@@ -179,11 +179,11 @@ Una funzione è **monotòna** se:
 
 - preserva l'ordine (funzione **crescente**)
   $$
-  x_1 \geq x_2 \implies f(x_1) \geq f(x_2)
+  x_1 > x_2 \implies f(x_1) \geq f(x_2)
   $$
 - inverte l'ordine (funzione **decrescente**)
   $$
-  x_1 \geq x_2 \implies f(x_1) \leq f(x_2)
+  x_1 > x_2 \implies f(x_1) \leq f(x_2)
   $$
 
 Rimuovendo l'uguaglianza ($\geq ~\to~ >$) si ottengono
