@@ -13,10 +13,10 @@ title: Vettori
 > -- R.B.
 
 La citazione sopra è di un mio professore, e per quanto apparentemente banale
-è estremamente profonda.
+è piuttosto profonda.
 
-Non è connessa al punto di vista tipico sui vettori, ma coglie il concetto per
-che la fisica vuole codificare in questi oggetti.
+Non è connessa al punto di vista tipico sui vettori, ma coglie il concetto
+principale che la fisica vuole codificare in questi oggetti.
 
 ## Cosa è un vettore?
 
@@ -122,7 +122,7 @@ Che aspetto ha graficamente quest'operazione?
 
 <Img alt="scale" src="/2021-prepmath/vectors-scale.png"/>
 
-che in parole possiamo dire:
+che in parole possiamo descrivere come:
 
 - dati un vettore $\vec v$ e un numero $\alpha$
 - moltiplica il modulo di $\vec v$ per il numero $\alpha$
@@ -136,29 +136,85 @@ $$
 
 ### Somma di vettori
 
+L'altra operazione richiesta dalla definizione 4 è la somma, quindi bisogna
+capire come definire la somma con il modello di vettori che è stato usato fin
+qui: i vettori della definizione 2.
+
+La somma è un'operazione che a due vettori ne associa un terzo, quindi una
+funzione:
+
+$$
++ : V \times V \to V
+$$
+
+Il modo per farlo è la cosiddetta **regola del parallelogramma**.
+
 <Img alt="scale" src="/2021-prepmath/vectors-sum.png"/>
+
+Che corrisponde a concatenare i vettori (la punta di uno con la coda
+dell'altro).
+
+In parole si può dire che:
+
+- dati due vettori $\vec v$ e $\vec w$
+- si ottiene un nuovo vettore somma $\vec u = \vec v + \vec w$ che ha per modulo
+  la lunghezza della diagonale del parallelogramma costruito sui due vettori di
+  partenza
+- e come direzione la direzione della diagonale
+
+(si può pensare anche come la **regola del triangolo**, più che del
+parallelogramma: dati due lati ne ottenete il terzo).
 
 ### Esempi
 
+Ogni cosa che può essere moltiplicata per uno scalare e sommata è quindi un
+vettore:
+
+- le matrici sono vettori
 - i polinomi sono vettori
 - le funzioni sono vettori
+- le successioni sono (funzioni e quindi) vettori
+- ...
 
 ### Componenti
 
-Decomposizione in componenti, cioè usiamo i vettori che abbiamo introdotto
-(definizione 4) in un linguaggio che è più affine alla definizione 3 (funziona
-bene con un numero finito di componenti, ma non con *spazi di dimensione
-infinita*).
+Ogni vettore (in dimensione finita) può essere decomposto in componenti (lungo
+una certa base, cioè degli assi).
+Questo corrisponde a usare i vettori che sono stati introdotti fin qui
+(definizione 4) in un linguaggio che è più affine alla definizione 3 (si noti
+appunto che funziona bene con un numero finito di componenti, ma non con *spazi
+di dimensione infinita*).
 
-Riconsiderando il *prodotto per scalare* in questo linguaggio:
+<Img alt="components" src="/2021-prepmath/vectors-components.png" align="left"/>
 
+Decomporre in componenti corrisponde a prendere le proiezioni su un insieme di
+assi di riferimento. In un piano ad esempio questi assi possono essere le
+ordinate e le ascisse.
 
-Riconsiderando anche la somma
+In questo modo le componenti diventano un concetto familiari: sono le
+*coordinate* del punto indicato dal vettore quando applicato nell'origine!
+
+Riconsiderando il *prodotto per scalare* in questo linguaggio, si ottiene che
+dato un vettore $\vec v  = (v_x, v_y)$ si ottiene:
+
+<Math display latex="\vec w = \alpha \vec v = \alpha \begin{'{'}pmatrix{'}'} v_x \\
+v_y \end{'{'}pmatrix{'}'} = \begin{'{'}pmatrix{'}'} \alpha v_x \\
+\alpha v_y \end{'{'}pmatrix{'}'}"/>
+
+Riconsiderando anche la *somma di vettori* si ottiene:
+<Math display latex="\vec u = \vec v + \vec w = \begin{'{'}pmatrix{'}'} v_x \\
+v_y \end{'{'}pmatrix{'}'} + \begin{'{'}pmatrix{'}'} w_x \\
+w_y \end{'{'}pmatrix{'}'} = \begin{'{'}pmatrix{'}'} v_x + w_x \\
+v_y + w_y \end{'{'}pmatrix{'}'} = \begin{'{'}pmatrix{'}'} u_x \\
+u_y \end{'{'}pmatrix{'}'}"/>
+
+E quindi le componenti della somma si ottengono sommando le singole componenti
+degli addendi.
 
 ## Prodotto scalare
 
 Il *prodotto scalare* è diverso dal *prodotto **per** uno scalare*, infatti il
-secondo era un'operazione da $ \reals \times V \to V $, mentre questo è:
+secondo era un'operazione da $\reals \times V \to V$, mentre questo è:
 
 $$
 \cdot : V \times V \to \reals
@@ -179,7 +235,7 @@ $$
 \times : V \times V \to V
 $$
 
-Il prodotto vettoriale esiste solo in $3$ dimensioni, né meno né più.
+Il prodotto vettoriale esiste solo in $3$ dimensioni, né più né meno.
 Intuitivamente il motivo è che rappresenta un'*area*, e in 3D a ogni area si può
 associare un vettore (modulo pari alla superficie, e direzione ortogonale
 all'area).
