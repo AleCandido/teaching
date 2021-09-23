@@ -223,11 +223,57 @@ $$
 Il prodotto scalare esiste per vettori di qualunque dimensione (e ne esisteranno
 più d'uno, ma per ora noi usiamo quello canonico).
 
-### 3D
+In particolare in 2D il prodotto scalare di due vettori $\vec v$ e $\vec w$
+corrisponde al *prodotto dei moduli dei due vettori per il coseno dell'angolo
+compreso*, cioè:
+
+<Math display latex="\vec v \cdot \vec w = |\vec v||\vec w| \text{'{'}cos{'}'}(\alpha)"/>
+
+### 3D (e più)
+
+La definizione che è stata data sopra è semplice in due dimensioni, ma
+è altrettanto valida in qualunque numero di dimensioni: due vettori infatti sono
+come i due lati di un triangolo (il punto di applicazione e i due punti di
+arrivo delle frecce), perciò individuano un unico piano in qualunque numero di
+dimensioni.
+
+Per cui in dimensione maggiore di 2 la ricetta è la seguente:
+- si individua il piano che contiene i due vettori
+- si applica la definizione di prodotto scalare all'interno del piano
+
+Dato che il risultato è un numero reale (uno scalare) non ha alcuna reminiscenza
+del numero di dimensioni di partenza.
 
 ### Componenti
 
-Riconsiderando anche quest'operazione in componenti 
+Scrivendo i due vettori in componenti si può ottenere una definizione
+particolarmente semplice del prodotto scalare, che corrisponde esattamente alla
+precedente, cioè:
+
+$$
+\vec v \cdot \vec w = \sum_i v_i w_i = v_x w_x + v_y w_y + \dots
+$$
+
+Questa operazione si può scrivere in modo più esplicito usando i vettori:
+
+<Math display latex="\begin{'{'}pmatrix{'}'} v_x & v_y
+& v_z\end{'{'}pmatrix{'}'}  \begin{'{'}pmatrix{'}'} w_x \\ w_y
+\\ w_z\end{'{'}pmatrix{'}'} = \begin{'{'}pmatrix{'}'} v_x & v_y
+& v_z\end{'{'}pmatrix{'}'}  \begin{'{'}pmatrix{'}'} 1 & 0 & 0 \\ 0 & 1 & 0 \\
+0 & 0 & 1\end{'{'}pmatrix{'}'} \begin{'{'}pmatrix{'}'} w_x \\ w_y
+\\ w_z\end{'{'}pmatrix{'}'}"/>
+
+La matrice identità che compare **è** il prodotto canonico (si possono scegliere
+altri prodotti usando una matrice diversa, ammesso che abbia certe proprietà).
+
+*Nota: E' possibile usare questa come definizione del prodotto scalare, e definire 
+il <Math latex="\text{'{'}cos{'}'}(\alpha)"/> di conseguenza.*
+
+### Proprietà
+
+Una proprietà fondamentale del prodotto scalare è che né le rotazioni né le
+simmetrie cambiano il valore del prodotto, dato che non cambiano né il valore
+dei moduli né l'angolo compreso (o meglio il suo coseno).
 
 ## Prodotto vettoriale
 
