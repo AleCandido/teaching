@@ -8,7 +8,7 @@
 
 <article>
 	<h1>{title}</h1>
-	<p class="ml-auto mr-6 mb-8 -mt-10 text-right text-lg underline">
+	<p class="ml-auto mr-6 mb-8 md:-mt-10 text-right text-lg underline">
 		<a href="." class="border border-double border-black p-2">Back</a>
 	</p>
 	<main class="overflow-auto">
