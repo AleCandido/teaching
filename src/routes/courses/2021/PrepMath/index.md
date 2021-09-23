@@ -56,4 +56,8 @@ Anche dopo la fine del corso non esitate a contattarmi per dubbi e difficoltà:
    - Versori e componenti cartesiane
    - Operazioni con i vettori
 
+## &#9745; Valutazione
+
+Per chi avesse voglia può [valutare il corso &rarrw;](https://forms.gle/7TVa5FFg38kHp7rT8)
+
 <!-- vim: set spelllang=it: -->

@@ -277,16 +277,44 @@ dei moduli né l'angolo compreso (o meglio il suo coseno).
 
 ## Prodotto vettoriale
 
+In questo caso il prodotto vettore è invece un'operazione:
+
 $$
 \times : V \times V \to V
 $$
 
 Il prodotto vettoriale esiste solo in $3$ dimensioni, né più né meno.
-Intuitivamente il motivo è che rappresenta un'*area*, e in 3D a ogni area si può
-associare un vettore (modulo pari alla superficie, e direzione ortogonale
-all'area).
+
+Intuitivamente il motivo è che può essere definito in ogni dimensione, ma rappresenta un'*area*. 
+
+In 3D, e solo in 3D, a ogni area si può associare un vettore: modulo pari alla
+superficie, e direzione ortogonale all'area.
+Questo funziona perché in 3 dimensioni ogni oggetto bidimensionale può essere
+completato con uno unidimensionale ($2 + 1 = 3$), mentre in ogni altra
+dimensione non funzionerebbe:
+
+- in **2 dimensioni**: un oggetto bidimensionale ha già tutte le dimensioni
+  disponibili
+- in **4 dimensioni**: un oggetto bidimensionale non ha un'unica retta
+  ortogonale, ma un intero piano!
+
+In pratica quindi potremmo dire che il prodotto vettore è l'area del
+parallelogramma, ma se vogliamo associare un vettore sarà:
+
+- un vettore di modulo l'area, cioè $| \vec  v \times \vec w | = | \vec
+  v | | \vec w | \sin \alpha$
+- e con direzione ortogonale al parallelogramma (cioè ortogonale al piano dei
+  due vettori $\vec v$ e $\vec w$) e nel verso dato dalla "regola della mano
+  destra" (infatti il prodotto vettore è antisimmetrico)
 
 ### Componenti
+
+Per scriverlo in componenti è necessario un ingrediente in più, cioè il [tensore
+di Levi-Civita](https://it.wikipedia.org/wiki/Simbolo_di_Levi-Civita) <Math
+latex="\varepsilon_{'{'}ijk{'}'}"/>, con cui sarebbe:
+
+<Math display latex="(\vec v \times \vec w)_i = \sum_{'{'}j, k = 1{'}'}^3
+\varepsilon_{'{'}ijk{'}'} v_j w_k"/>
 
 
 <!-- vim: set spelllang=it: -->
